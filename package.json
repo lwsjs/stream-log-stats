@@ -23,6 +23,6 @@
     "byte-size": "^0.1.0",
     "console-dope": "^0.3.4",
     "object-ting": "^1.0.1",
-    "string-ting": "0.0.1"
+    "string-ting": "^0.1.0"
   }
 }
