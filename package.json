@@ -1,0 +1,22 @@
+{
+  "name": "stream-log-stats",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "0.0.0",
+  "description": "",
+  "repository": "https://github.com/75lb/stream-log-stats.git",
+  "main": "./lib/stream-log-stats.js",
+  "bin": {
+    "log-stats": "bin/cli.js"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "lint": "jshint lib/*.js bin/*.js test/*.js; echo"
+  },
+  "devDependencies": {
+    "tape": "^2.13.2"
+  }
+}
