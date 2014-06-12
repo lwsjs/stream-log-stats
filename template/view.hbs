@@ -1,12 +1,12 @@
-Clients Requests Transferred
-{{clientCount}}  {{requests}}  {{transferred}}
+{{string-padRight (ansi-underline "Clients") 17}}{{string-padRight (ansi-underline "Requests") 18}}{{ansi-underline "Transferred"}}
+{{string-padRight clientCount 9}}{{string-padRight requests 10}}{{transferred}}
 
-Resource                                              Requests Transferred
-{{topResources.[0].resource}} {{topResources.[0].requests}} {{topResources.[0].bytes}}
-{{topResources.[1].resource}} {{topResources.[1].requests}} {{topResources.[1].bytes}}
-{{topResources.[2].resource}} {{topResources.[2].requests}} {{topResources.[2].bytes}}
+{{string-padRight (ansi-underline "Type") 27}}{{string-padRight (ansi-underline "Requests") 18}}{{ansi-underline "Transferred"}}
+{{string-padRight topTypes.[0].type 19}}{{string-padRight topTypes.[0].requests 10}}{{topTypes.[0].bytes}}
+{{string-padRight topTypes.[1].type 19}}{{string-padRight topTypes.[1].requests 10}}{{topTypes.[1].bytes}}
+{{string-padRight topTypes.[2].type 19}}{{string-padRight topTypes.[2].requests 10}}{{topTypes.[2].bytes}}
 
-Type                                              Requests Transferred
-{{topTypes.[0].type}} {{topTypes.[0].requests}} {{topTypes.[0].bytes}}
-{{topTypes.[1].type}} {{topTypes.[1].requests}} {{topTypes.[1].bytes}}
-{{topTypes.[2].type}} {{topTypes.[2].requests}} {{topTypes.[2].bytes}}
+{{string-padRight (ansi-underline "Resource") 67}}{{string-padRight (ansi-underline "Requests") 18}}{{ansi-underline "Transferred"}}
+{{string-padRight topResources.[0].resource 59}}{{string-padRight topResources.[0].requests 10}}{{topResources.[0].bytes}}
+{{string-padRight topResources.[1].resource 59}}{{string-padRight topResources.[1].requests 10}}{{topResources.[1].bytes}}
+{{string-padRight topResources.[2].resource 59}}{{string-padRight topResources.[2].requests 10}}{{topResources.[2].bytes}}
