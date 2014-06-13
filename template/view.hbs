@@ -2,11 +2,8 @@
 {{string-padRight clientCount 9}}{{string-padRight requests 10}}{{transferred}}
 
 {{string-padRight (ansi-underline "Extension") 27}}{{string-padRight (ansi-underline "Requests") 18}}{{ansi-underline "Transferred"}}
-{{{string-padRight topTypes.[0].type 19}}}{{string-padRight topTypes.[0].requests 10}}{{topTypes.[0].bytes}}
-{{{string-padRight topTypes.[1].type 19}}}{{string-padRight topTypes.[1].requests 10}}{{topTypes.[1].bytes}}
-{{{string-padRight topTypes.[2].type 19}}}{{string-padRight topTypes.[2].requests 10}}{{topTypes.[2].bytes}}
-
+{{#each topTypes}}{{{string-padRight type 19}}}{{string-padRight requests 10}}{{bytes}}
+{{/each}}
 {{string-padRight (ansi-underline "Resource") 67}}{{string-padRight (ansi-underline "Requests") 18}}{{ansi-underline "Transferred"}}
-{{{string-padRight (string-clipLeft topResources.[0].resource 57) 59}}}{{string-padRight topResources.[0].requests 10}}{{topResources.[0].bytes}}
-{{{string-padRight (string-clipLeft topResources.[1].resource 57) 59}}}{{string-padRight topResources.[1].requests 10}}{{topResources.[1].bytes}}
-{{{string-padRight (string-clipLeft topResources.[2].resource 57) 59}}}{{string-padRight topResources.[2].requests 10}}{{topResources.[2].bytes}}
+{{#each topResources}}{{{string-padRight (string-clipLeft resource 57) 59}}}{{string-padRight requests 10}}{{bytes}}
+{{/each~}}
