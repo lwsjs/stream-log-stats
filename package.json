@@ -23,7 +23,6 @@
     "boil-js": "^0.1.4",
     "byte-size": "^0.1.0",
     "console-dope": "^0.3.4",
-    "object-tools": "^1.0.3",
-    "string-tools": "^0.1.4"
+    "object-tools": "^1.0.3"
   }
 }
