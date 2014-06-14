@@ -3,4 +3,4 @@
 
 var statsView = require("../");
 
-process.stdin.pipe(statsView()).pipe(process.stdout);
+process.stdin.pipe(statsView());
