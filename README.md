@@ -18,6 +18,7 @@ $ npm install stream-log-stats --save
 ####Example
 ```js
 var connect = require("connect"),
+    morgan = require("morgan"), // logging middleware
     http = require("http"),
     logStats = require("stream-log-stats");
 
@@ -37,7 +38,7 @@ Now the `log-stats` utility is installed. Pipe in a common-log-format log to vie
 
 ####Example
 This example pipes the output from [local-web-server](https://www.npmjs.org/package/local-web-server) into `log-stats`.
-```sh
+```
 $ ws -f default | log-stats
 serving at http://localhost:8000
 Clients  Requests  Transferred
