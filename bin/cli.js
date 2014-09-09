@@ -3,4 +3,4 @@
 
 var statsView = require("../");
 
-process.stdin.pipe(statsView());
+process.stdin.pipe(statsView({ refreshRate: 10 }));
