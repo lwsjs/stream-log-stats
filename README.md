@@ -3,19 +3,19 @@
 [![Build Status](https://travis-ci.org/75lb/stream-log-stats.svg?branch=master)](https://travis-ci.org/75lb/stream-log-stats)
 [![Dependency Status](https://david-dm.org/75lb/stream-log-stats.svg)](https://david-dm.org/75lb/stream-log-stats)
 
-#stream-log-stats
+# stream-log-stats
 Presents a dynamic view of the incoming [common log format](http://en.wikipedia.org/wiki/Common_Log_Format) data to the console. The view is refreshed as new data streams in. 
 
-##Installation
+## Installation
 Mac / Linux users may need to run the install commands with `sudo`.
 
-###As a library 
+### As a library 
 Move into your project directory then run: 
 ```sh
 $ npm install stream-log-stats --save
 ```
 
-####Example
+#### Example
 ```js
 var connect = require("connect"),
     morgan = require("morgan"), // logging middleware
@@ -28,7 +28,7 @@ app.use(morgan({ stream: logStats() }));
 var server = http.createServer(app).listen(8000);
 ```
 
-###As a command-line app
+### As a command-line app
 From any directory run the following:
 ```sh
 $ npm install -g stream-log-stats
@@ -36,7 +36,7 @@ $ npm install -g stream-log-stats
 
 Now the `log-stats` utility is installed. Pipe in a common-log-format log to view the statistics. 
 
-####Example
+#### Example
 This example pipes the output from [local-web-server](https://www.npmjs.org/package/local-web-server) into `log-stats`.
 ```
 $ ws -f default | log-stats
