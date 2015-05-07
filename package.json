@@ -1,7 +1,7 @@
 {
   "name": "stream-log-stats",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "0.1.11",
+  "version": "1.0.0",
   "description": "Prints statistics from the incoming web log stream to the console",
   "repository": "https://github.com/75lb/stream-log-stats.git",
   "main": "./lib/stream-log-stats.js",
