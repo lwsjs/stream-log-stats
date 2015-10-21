@@ -2,6 +2,7 @@
 [![npm module downloads per month](http://img.shields.io/npm/dm/stream-log-stats.svg)](https://www.npmjs.org/package/stream-log-stats)
 [![Build Status](https://travis-ci.org/75lb/stream-log-stats.svg?branch=master)](https://travis-ci.org/75lb/stream-log-stats)
 [![Dependency Status](https://david-dm.org/75lb/stream-log-stats.svg)](https://david-dm.org/75lb/stream-log-stats)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # stream-log-stats
 Presents a dynamic view of the incoming [common log format](http://en.wikipedia.org/wiki/Common_Log_Format) data to the console. The view is refreshed as new data streams in.

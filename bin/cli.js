@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-"use strict";
+'use strict'
 
-var statsView = require("../");
+var statsView = require('../')
 
-process.stdin.pipe(statsView({ refreshRate: 10 }));
+process.stdin.pipe(statsView({ refreshRate: 10 }))
