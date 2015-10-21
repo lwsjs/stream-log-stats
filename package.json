@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Prints statistics from the incoming web log stream to the console",
   "repository": "https://github.com/75lb/stream-log-stats.git",
+  "license": "MIT",
   "main": "./lib/stream-log-stats.js",
   "bin": {
     "log-stats": "bin/cli.js"

@@ -4,13 +4,13 @@
 [![Dependency Status](https://david-dm.org/75lb/stream-log-stats.svg)](https://david-dm.org/75lb/stream-log-stats)
 
 # stream-log-stats
-Presents a dynamic view of the incoming [common log format](http://en.wikipedia.org/wiki/Common_Log_Format) data to the console. The view is refreshed as new data streams in. 
+Presents a dynamic view of the incoming [common log format](http://en.wikipedia.org/wiki/Common_Log_Format) data to the console. The view is refreshed as new data streams in.
 
 ## Installation
 Mac / Linux users may need to run the install commands with `sudo`.
 
-### As a library 
-Move into your project directory then run: 
+### As a library
+Move into your project directory then run:
 ```sh
 $ npm install stream-log-stats --save
 ```
@@ -34,7 +34,7 @@ From any directory run the following:
 $ npm install -g stream-log-stats
 ```
 
-Now the `log-stats` utility is installed. Pipe in a common-log-format log to view the statistics. 
+Now the `log-stats` utility is installed. Pipe in a common-log-format log to view the statistics.
 
 #### Example
 This example pipes the output from [local-web-server](https://www.npmjs.org/package/local-web-server) into `log-stats`.
@@ -68,3 +68,7 @@ Resource                                                   Requests  Transferred
 /_gh-pages/assets/images/thumb/past-simple.jpg             2         82.27 KB
 /_gh-pages/assets/fonts/PTSansWeb/PTS75F_W.woff            2         465.52 KB
 ```
+
+* * *
+
+&copy; 2015 Lloyd Brookes \<75pound@gmail.com\>.
