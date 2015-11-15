@@ -1,6 +1,5 @@
 [![view on npm](http://img.shields.io/npm/v/stream-log-stats.svg)](https://www.npmjs.org/package/stream-log-stats)
-[![npm module downloads per month](http://img.shields.io/npm/dm/stream-log-stats.svg)](https://www.npmjs.org/package/stream-log-stats)
-[![Build Status](https://travis-ci.org/75lb/stream-log-stats.svg?branch=master)](https://travis-ci.org/75lb/stream-log-stats)
+[![npm module downloads](http://img.shields.io/npm/dt/stream-log-stats.svg)](https://www.npmjs.org/package/stream-log-stats)
 [![Dependency Status](https://david-dm.org/75lb/stream-log-stats.svg)](https://david-dm.org/75lb/stream-log-stats)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
@@ -18,15 +17,15 @@ $ npm install stream-log-stats --save
 
 #### Example
 ```js
-var connect = require("connect"),
-    morgan = require("morgan"), // logging middleware
-    http = require("http"),
-    logStats = require("stream-log-stats");
+var connect = require('connect')
+var morgan = require('morgan') // logging middleware
+var http = require('http')
+var logStats = require('stream-log-stats')
 
-var app = connect();
-app.use(morgan({ stream: logStats() }));
+var app = connect()
+app.use(morgan({ stream: logStats() }))
 
-var server = http.createServer(app).listen(8000);
+var server = http.createServer(app).listen(8000)
 ```
 
 ### As a command-line app
@@ -40,7 +39,7 @@ Now the `log-stats` utility is installed. Pipe in a common-log-format log to vie
 #### Example
 This example pipes the output from [local-web-server](https://www.npmjs.org/package/local-web-server) into `log-stats`.
 ```
-$ ws -f default | log-stats
+$ ws -f common | log-stats
 serving at http://localhost:8000
 Clients  Requests  Transferred
 1        48        2.79 MB
