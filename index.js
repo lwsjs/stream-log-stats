@@ -1,15 +1,7 @@
-'use strict'
-const Clf = require('common-log-format')
-const view = require('./view')
-const stats = require('./stats')
-const JSONStream = require('JSONStream')
-const streamVia = require('stream-via')
-const throttle = require('lodash.throttle')
-
-module.exports = streamLogStats
-
-function streamLogStats (options) {
-  options = options || {}
+function streamLogStats (options = {}) {
+  const stats = require('./lib/stats')
+  const view = require('./lib/view')
+  const throttle = require('lodash.throttle')
   const throttledRender = throttle(view.render, options.refreshRate || 500)
 
   function renderLogObject (logObject) {
@@ -30,6 +22,9 @@ function streamLogStats (options) {
     return logObject
   }
 
+  const Clf = require('common-log-format')
+  const JSONStream = require('JSONStream')
+  const streamVia = require('stream-via')
   const clf = new Clf(options)
   clf
     .pipe(JSONStream.parse())
@@ -37,3 +32,5 @@ function streamLogStats (options) {
     .resume()
   return clf
 }
+
+module.exports = streamLogStats

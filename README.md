@@ -1,21 +1,25 @@
 [![view on npm](http://img.shields.io/npm/v/stream-log-stats.svg)](https://www.npmjs.org/package/stream-log-stats)
 [![npm module downloads](http://img.shields.io/npm/dt/stream-log-stats.svg)](https://www.npmjs.org/package/stream-log-stats)
-[![Dependency Status](https://david-dm.org/75lb/stream-log-stats.svg)](https://david-dm.org/75lb/stream-log-stats)
+[![Dependency Status](https://badgen.net/david/dep/75lb/stream-log-stats)](https://david-dm.org/75lb/stream-log-stats)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # stream-log-stats
+
 Presents a dynamic view of the incoming [common log format](http://en.wikipedia.org/wiki/Common_Log_Format) data to the console. The view is refreshed as new data streams in.
 
 ## Installation
+
 Mac / Linux users may need to run the install commands with `sudo`.
 
 ### As a library
+
 Move into your project directory then run:
 ```sh
 $ npm install stream-log-stats --save
 ```
 
 #### Example
+
 ```js
 var connect = require('connect')
 var morgan = require('morgan') // logging middleware
@@ -29,6 +33,7 @@ var server = http.createServer(app).listen(8000)
 ```
 
 ### As a command-line app
+
 From any directory run the following:
 ```sh
 $ npm install -g stream-log-stats
@@ -37,6 +42,7 @@ $ npm install -g stream-log-stats
 Now the `log-stats` utility is installed. Pipe in a common-log-format log to view the statistics.
 
 #### Example
+
 This example pipes the output from [local-web-server](https://www.npmjs.org/package/local-web-server) into `log-stats`.
 ```
 $ ws -f common | log-stats
@@ -71,4 +77,4 @@ Resource                                                   Requests  Transferred
 
 * * *
 
-&copy; 2015-17 Lloyd Brookes \<75pound@gmail.com\>.
+&copy; 2015-19 Lloyd Brookes \<75pound@gmail.com\>.
