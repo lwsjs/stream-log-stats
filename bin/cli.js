@@ -2,3 +2,4 @@
 const statsView = require('../')
 
 process.stdin.pipe(statsView({ refreshRate: 100 }))
+

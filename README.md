@@ -1,6 +1,8 @@
-[![view on npm](http://img.shields.io/npm/v/stream-log-stats.svg)](https://www.npmjs.org/package/stream-log-stats)
-[![npm module downloads](http://img.shields.io/npm/dt/stream-log-stats.svg)](https://www.npmjs.org/package/stream-log-stats)
-[![Dependency Status](https://badgen.net/david/dep/75lb/stream-log-stats)](https://david-dm.org/75lb/stream-log-stats)
+[![view on npm](https://badgen.net/npm/v/stream-log-stats)](https://www.npmjs.org/package/stream-log-stats)
+[![npm module downloads](https://badgen.net/npm/dt/stream-log-stats)](https://www.npmjs.org/package/stream-log-stats)
+[![Gihub repo dependents](https://badgen.net/github/dependents-repo/lwsjs/stream-log-stats)](https://github.com/lwsjs/stream-log-stats/network/dependents?dependent_type=REPOSITORY)
+[![Gihub package dependents](https://badgen.net/github/dependents-pkg/lwsjs/stream-log-stats)](https://github.com/lwsjs/stream-log-stats/network/dependents?dependent_type=PACKAGE)
+[![Node.js CI](https://github.com/lwsjs/stream-log-stats/actions/workflows/node.js.yml/badge.svg)](https://github.com/lwsjs/stream-log-stats/actions/workflows/node.js.yml)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 # stream-log-stats
@@ -77,4 +79,4 @@ Resource                                                   Requests  Transferred
 
 * * *
 
-&copy; 2015-19 Lloyd Brookes \<75pound@gmail.com\>.
+&copy; 2015-25 Lloyd Brookes \<75pound@gmail.com\>.
