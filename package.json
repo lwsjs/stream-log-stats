@@ -23,7 +23,7 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "test": "test-runner test.js"
+    "test": "75lb-nature test-runner test.js"
   },
   "devDependencies": {},
   "dependencies": {
